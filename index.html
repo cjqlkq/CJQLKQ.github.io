@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-box">
+            <span>个人主页</span>
+            <ul class="nav">
+                <li><a href="#" class="on">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#hobbies">兴趣爱好</a></li>
+                <li><a href="#daily">每日图片</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner">
+        欢迎来到我的个人主页
+    </div>
+
+    <div class="introduce" id="about">
+        <h2 class="introduce-tit">关于我</h2>
+        <div class="introduce-main">
+            <div class="l">
+                <img src="images/8E7F5CE37AEF027E77561B6F7AC6A3F0.png" alt="个人照片">
+            </div>
+            <div class="r">
+                <div class="edu-box">
+                    <div class="time">
+                        <div class="icon"></div>
+                        <div class="text">2023-至今</div>
+                    </div>
+                    <div class="r-box">
+                        <div class="tit">本科</div>
+                        <div class="small">物联网工程 - 重庆邮电大学</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="introduce" id="hobbies">
+        <h2 class="introduce-tit">兴趣爱好</h2>
+        <div class="hobby-list">
+            <div class="hobby-item">
+                <div class="l">
+                    <img src="images/36D7DCF9367B183C469AFB7D36361AE7.jpg" alt="美食">
+                    <img src="images/4a0297633262b7d0e7133374fcd20d8f_720.jpg" alt="美食">
+                </div>
+                <div class="r">
+                    <div class="hobby-content">
+                        <h3>美食</h3>
+                        <p>品尝各种美食，徜徉食物海洋。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="l">
+                    <img src="images/93222776767228ADC6BB30848A8B0E3B.jpg" alt="游戏">
+                    <img src="images/BA4A2BA8D79604EA286C8C8B824ADC28.jpg" alt="游戏">
+                </div>
+                <div class="r">
+                    <div class="hobby-content">
+                        <h3>游戏</h3>
+                        <p>体验游戏乐趣，感受第九艺术。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="l">
+                    <img src="images/9B9D280A67D40A2FE40E6ED5543425E1.jpg" alt="生活">
+                    <img src="images/f643f1f47bca42303ef3e393235148ae_720.jpg" alt="生活">
+                </div>
+                <div class="r">
+                    <div class="hobby-content">
+                        <h3>生活</h3>
+                        <p>喜欢足球，爱好吉他。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-box" id="daily">
+        <h2 class="introduce-tit">每日图片</h2>
+        <div class="date-selector">
+            <button class="date-btn" data-date="2025-06">2025.6</button>
+            <button class="date-btn" data-date="2025-05">2025.5</button>
+            <button class="date-btn" data-date="2025-04">2025.4</button>
+        </div>
+        <div class="daily-image-container">
+            <img id="daily-image" src="" alt="每日图片">
+            <p id="image-date"></p>
+            <p id="image-desc"></p> 
+        </div>
+    </div>
+
+
+    <div class="main-box" id="ads">
+        <h2 class="introduce-tit">推荐内容</h2>
+        <div class="ad-container">
+            <a href="https://m.tb.cn/h.hZuSG3oqA9i0RsU" target="_blank" class="ad-item">
+                <img src="images/3bae2cf2a504c02f7f45434105c7744f.jpg" alt="开源无人机">
+                <span>开源无人机新动模型官网<span>开源无人机新动模型官网</span>
+            </a>
+            <a href="https://www.nintendo.com/hk/hardware/switch2/index.html" target="_blank" class="ad-item">
+                <img src="/images/dsc0210_vmj3.1920.webp" alt="广告2">
+                <span>任天堂Switch2</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-box" id="contact">
+        <h2 class="introduce-tit">联系我</h2>
+        <form class="myform">
+            <div class="inp-box">
+                <label>姓名:</label>
+                <input type="text" class="inp" placeholder="请输入您的姓名">
+            </div>
+            <div class="inp-box">
+                <label>邮箱:</label>
+                <input type="email" class="inp" placeholder="请输入您的邮箱">
+            </div>
+            <div class="inp-box">
+                <label>留言:</label>
+                <textarea class="msg" placeholder="请输入您的留言"></textarea>
+            </div>
+            <div class="inp-box">
+                <label></label>
+                <button type="submit" class="but">提交</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="main-box" id="links">
+        <h2 class="introduce-tit">友情链接</h2>
+        <div class="link-container">
+            <a href="https://www.cqupt.edu.cn/" target="_blank">重庆邮电大学</a>
+            <a href="https://ac.cqupt.edu.cn/" target="_blank">重庆邮电大学自动化学院</a>
+        </div>
+    </div>
+
+    <footer class="foot-box">
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    document.querySelectorAll('.nav a').forEach(navLink => {
+                        navLink.classList.remove('on');
+                    });
+                    this.classList.add('on');
+                }
+            });
+        });
+
+        const dateBtns = document.querySelectorAll('.date-btn');
+        const dailyImage = document.getElementById('daily-image');
+        const imageDate = document.getElementById('image-date');
+        const imageDesc = document.getElementById('image-desc'); // 获取描述元素
+        
+        const imageMap = {
+            '2025-06': 'images/7bb9043973e904353f70db25c12d897d_720.jpg',
+            '2025-05': 'images/e9e302323d88dff16a89a8925ec943e9_720.jpg',
+            '2025-04': 'images/0ca9b8872edcdc3dd30fa6cb72a1ab40_720.jpg'
+        };
+        
+        const imageDescMap = {
+            '2025-06': '无人机飞控调试',
+            '2025-05': '参加比赛',
+            '2025-04': '智能车代码仿真'
+        };
+        
+        const monthNames = {
+            '01': '一月', '02': '二月', '03': '三月', '04': '四月',
+            '05': '五月', '06': '六月', '07': '七月', '08': '八月',
+            '09': '九月', '10': '十月', '11': '十一月', '12': '十二月'
+        };
+
+        function initDailyImage() {
+            const firstBtn = dateBtns[0];
+            handleDateChange(firstBtn);
+        }
+
+        function handleDateChange(btn) {
+            const date = btn.getAttribute('data-date');
+            const [year, month] = date.split('-');
+            
+            if (!imageMap[date]) {
+                console.warn(`未找到日期 ${date} 对应的图片`);
+                return;
+            }
+            
+            dailyImage.src = imageMap[date];
+            dailyImage.alt = `每日图片 ${year}年${monthNames[month]}`;
+            imageDate.textContent = `${year}年${monthNames[month]}`;
+            
+            imageDesc.textContent = imageDescMap[date] || '';
+            
+            dateBtns.forEach(button => button.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        dateBtns.forEach(btn => {
+            btn.addEventListener('click', () => handleDateChange(btn));
+        });
+
+        window.addEventListener('load', initDailyImage);
+    </script>
+</body>
+</html>
